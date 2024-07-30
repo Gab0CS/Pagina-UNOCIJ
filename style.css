@@ -14751,3 +14751,52 @@ h1 {
   width: 80px;
   height: 80px;
 }
+/* Custom CSS for mobile navbar background */
+.navbar-collapse .navbar-nav .nav-item{
+  color: #fff;
+}
+.logo-responsivo{
+  width: 70%;
+}
+.container-logo-responsivo{
+  display: flex;
+}
+@media (max-width: 600px) {
+  .logo-responsivo{
+    width: 50%;
+  }
+}
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+      background-color: transparent;
+      transition: background-color 0.3s ease;
+  }
+  .navbar-collapse.show {
+      background-color: white;
+  }
+  .navbar-collapse .navbar-nav .nav-item{
+    color: #7C1755;
+  }
+  .navbar-collapse .navbar-nav .nav-item:hover{
+    color: #FFEB3B;
+  }
+}
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 100px;
+  right: 20px;  /* Ajustado para la esquina inferior derecha */
+  background-color: #25D366;
+  color: white;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  z-index: 99;
+}
+.whatsapp-button:hover {
+  background-color: #22b157;
+}
